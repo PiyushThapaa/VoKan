@@ -76,6 +76,7 @@ if (type == "kanji") {
         }
     }
     showKanji();
+    document.getElementById("quiz-box").style.display = "block";
 
     document.getElementById("check").addEventListener('click', checkAnswer)
 }
@@ -134,6 +135,7 @@ if (type == "vocab") {
         }
     }
     showVocab();
+    document.getElementById("quiz-box").style.display = "block";
 
     document.getElementById("check").addEventListener('click', checkAnswer)
 }
