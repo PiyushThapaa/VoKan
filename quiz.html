@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VoKan Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="quiz-container" class="quiz-container">
+    <h1>VoKan Quiz</h1>
+    <div id="quiz-box">
+      <p><strong>S.No:</strong> <span id="sno">1</span></p>
+      <p><strong id="type">Kanji/Vocab:</strong> <span id="kanji-vocab"></span></p>
+
+      <input type="text" id="input1" placeholder="Enter Hiragana or Romaji" />
+      <input type="text" id="input2" placeholder="Enter Meaning in English" />
+
+      <button id="check">Check</button>
+      <p id="hiragana"><b>Hiragana/Romaji : </b></p>
+      <p id="meaning"><b>Meaning : </b></p>
+      <p></p>
+      <p id="result"></p>
+    </div>
+  </div>
+
+  <div class="result-container" id="resultContainer" style="display: none;">
+    <h1>🎉 Quiz Finished</h1>
+    <p id="score"></p>
+    <a href="/">Go to Home</a>
+  </div>
+
+  <script type="module" src="quiz.js"></script>
+</body>
+</html>

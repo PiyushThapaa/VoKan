@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VoKan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Practice with VoKan</h1>
+    <div class="button-group">
+      <div id="vocabBtn" onclick="navigateTo('vocab')" class="big-button">Vocab</div>
+      <div  id="kanjiBtn" onclick="navigateTo('kanji')" class="big-button">Kanji</div>
+    </div>
+  </div>
+  <script>
+    function navigateTo(type) {
+    window.location.href = `practice.html?type=${type}`;
+  }
+  </script>
+</body>
+</html>
