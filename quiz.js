@@ -28,6 +28,7 @@ if (type == "kanji") {
         document.getElementById("result").innerText = "";
         document.getElementById("hiragana").style.display = "none";
         document.getElementById("meaning").style.display = "none";
+        document.getElementById("move-forward").style.display = "none";
     }
     function checkAnswer() {
         const userInput1 = document.getElementById("input1").value.trim().toLowerCase();
@@ -47,25 +48,26 @@ if (type == "kanji") {
             document.getElementById("hiragana").innerHTML = "<b>Hiragana/Romaji : </b>";
             document.getElementById("hiragana").style.display = "block";
             document.getElementById("meaning").style.display = "block";
+            document.getElementById("move-forward").style.display = "inline";
             current.meaning.forEach((element, index) => {
                 if (index == current.meaning.length - 1) {
-                    document.getElementById("meaning").innerText += `${element}`
+                    document.getElementById("meaning").innerHTML += `${element}`
                 } else {
-                    document.getElementById("meaning").innerText += `${element}, `
+                    document.getElementById("meaning").innerHTML += `${element}, `
                 }
             });
             current.hiragana.forEach((element, index) => {
                 if (index == current.meaning.length - 1) {
-                    document.getElementById("hiragana").innerText += `${element}/${current.romaji[index]}`;
+                    document.getElementById("hiragana").innerHTML += `${element}/${current.romaji[index]}`;
                 } else {
-                    document.getElementById("hiragana").innerText += `${element}/${current.romaji[index]}, `;
+                    document.getElementById("hiragana").innerHTML += `${element}/${current.romaji[index]}, `;
                 }
             });
-            document.getElementById("result").textContent = "❌ Try Again!";
+            document.getElementById("result").textContent = "❌ Incorrect";
         }
         currentIndex++;
         if (currentIndex < kanji.length) {
-            setTimeout(showKanji, 1000); // move to next after 1 sec
+            document.getElementById("move-forward").addEventListener('click', showKanji)
 
         } else {
             setTimeout(() => {
@@ -95,6 +97,7 @@ if (type == "vocab") {
     let score = 0
     function showVocab() {
         const current = vocab[currentIndex];
+        document.getElementById("move-forward").style.display = "none";
         document.getElementById("sno").textContent = `${currentIndex + 1}`;
         document.getElementById("kanji-vocab").innerText = `${current.vocab}`;
         document.getElementById("input2").value = "";
@@ -113,7 +116,8 @@ if (type == "vocab") {
         } else {
             document.getElementById("meaning").innerHTML = "<b>Meaning : </b>";
             document.getElementById("meaning").style.display = "block";
-            document.getElementById("result").textContent = "❌ Try Again!";
+            document.getElementById("move-forward").style.display = "inline";
+            document.getElementById("result").textContent = "❌ Incorrect";
             current.meaning.forEach((element, index) => {
                 if (index == current.meaning.length - 1) {
                     document.getElementById("meaning").innerHTML += `${element}`
@@ -124,8 +128,7 @@ if (type == "vocab") {
         }
         currentIndex++;
         if (currentIndex < vocab.length) {
-            setTimeout(showVocab, 1000); // move to next after 1 sec
-
+            document.getElementById("move-forward").addEventListener('click', showVocab);
         } else {
             setTimeout(() => {
                 document.getElementById("quiz-container").style.display = "none";
