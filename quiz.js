@@ -67,9 +67,14 @@ if (type == "kanji") {
         }
         currentIndex++;
         if (currentIndex < kanji.length) {
-            document.getElementById("move-forward").addEventListener('click', showKanji)
+            if (isCorrect1 && isCorrect2) {
+                setTimeout(showKanji,800)
+            } else{
+                document.getElementById("move-forward").addEventListener('click', showKanji);
+            }
 
         } else {
+            document.getElementById("move-forward").style.display = "none";
             setTimeout(() => {
                 document.getElementById("quiz-container").style.display = "none";
                 document.getElementById("resultContainer").style.display = "block";
@@ -128,8 +133,13 @@ if (type == "vocab") {
         }
         currentIndex++;
         if (currentIndex < vocab.length) {
-            document.getElementById("move-forward").addEventListener('click', showVocab);
+            if (isCorrect2) {
+                setTimeout(showVocab,800)
+            } else{
+                document.getElementById("move-forward").addEventListener('click', showVocab);
+            }
         } else {
+            document.getElementById("move-forward").style.display = "none";
             setTimeout(() => {
                 document.getElementById("quiz-container").style.display = "none";
                 document.getElementById("resultContainer").style.display = "block";
