@@ -63,5 +63,30 @@ export const kanjiBlocks = {
       { kanji: "九日", hiragana: ["ここのか"], romaji: ["kokonoka"], meaning: ["9th day"] },
       { kanji: "十日", hiragana: ["とおか"], romaji: ["tooka"], meaning: ["10th day"] },
       { kanji: "二十日", hiragana: ["はつか"], romaji: ["hatsuka"], meaning: ["20th day"] }
-    ]
+    ],
+    4: [
+      { kanji: "下", hiragana: ["した"], romaji: ["shita"], meaning: ["under", "below"] },
+      { kanji: "中", hiragana: ["なか"], romaji: ["naka"], meaning: ["inside", "middle"] },
+      { kanji: "外", hiragana: ["そと"], romaji: ["soto"], meaning: ["outside"] },
+      { kanji: "小さい", hiragana: ["ちいさい"], romaji: ["chiisai"], meaning: ["small"] },
+      { kanji: "大きい", hiragana: ["おおきい"], romaji: ["ookii"], meaning: ["big", "large"] },
+      { kanji: "犬", hiragana: ["いぬ"], romaji: ["inu"], meaning: ["dog"] },
+      { kanji: "牛", hiragana: ["うし"], romaji: ["ushi"], meaning: ["cow", "ox"] },
+      { kanji: "馬", hiragana: ["うま"], romaji: ["uma"], meaning: ["horse"] },
+      { kanji: "門", hiragana: ["もん"], romaji: ["mon"], meaning: ["gate"] },
+      { kanji: "間", hiragana: ["あいだ"], romaji: ["aida"], meaning: ["between", "interval"] },
+      { kanji: "池", hiragana: ["いけ"], romaji: ["ike"], meaning: ["pond"] },
+      { kanji: "本", hiragana: ["ほん"], romaji: ["hon"], meaning: ["book", "origin"] },
+      { kanji: "川", hiragana: ["かわ"], romaji: ["kawa"], meaning: ["river"] },
+      { kanji: "木", hiragana: ["き"], romaji: ["ki"], meaning: ["tree", "wood"] },
+      { kanji: "一人", hiragana: ["ひとり"], romaji: ["hitori"], meaning: ["one person", "alone"] },
+      { kanji: "二人", hiragana: ["ふたり"], romaji: ["futari"], meaning: ["two people"] },
+      { kanji: "三人", hiragana: ["さんにん"], romaji: ["sannin"], meaning: ["three people"] },
+      { kanji: "四人", hiragana: ["よにん"], romaji: ["yonin"], meaning: ["four people"] },
+      { kanji: "お金", hiragana: ["おかね"], romaji: ["okane"], meaning: ["money"] },
+      { kanji: "日本", hiragana: ["にほん"], romaji: ["nihon"], meaning: ["japan"] },
+      { kanji: "一本", hiragana: ["いっぽん"], romaji: ["ippon"], meaning: ["one long object"] },
+      { kanji: "三本", hiragana: ["さんぼん"], romaji: ["sanbon"], meaning: ["three long objects"] }
+    ],
+    
   };
