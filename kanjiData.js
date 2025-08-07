@@ -88,5 +88,31 @@ export const kanjiBlocks = {
       { kanji: "一本", hiragana: ["いっぽん"], romaji: ["ippon"], meaning: ["one long object"] },
       { kanji: "三本", hiragana: ["さんぼん"], romaji: ["sanbon"], meaning: ["three long objects"] }
     ],
-    
+    5: [
+      { kanji: "太い", hiragana: ["ふとい"], romaji: ["futoi"], meaning: ["thick"] },
+      { kanji: "手", hiragana: ["て"], romaji: ["te"], meaning: ["hand"] },
+      { kanji: "林", hiragana: ["はやし"], romaji: ["hayashi"], meaning: ["woods", "grove"] },
+      { kanji: "雨", hiragana: ["あめ"], romaji: ["ame"], meaning: ["rain"] },
+      { kanji: "雪", hiragana: ["ゆき"], romaji: ["yuki"], meaning: ["snow"] },
+      { kanji: "天気", hiragana: ["てんき"], romaji: ["tenki"], meaning: ["weather"] },
+      { kanji: "東", hiragana: ["ひがし"], romaji: ["higashi"], meaning: ["east"] },
+      { kanji: "西", hiragana: ["にし"], romaji: ["nishi"], meaning: ["west"] },
+      { kanji: "南", hiragana: ["みなみ"], romaji: ["minami"], meaning: ["south"] },
+      { kanji: "北", hiragana: ["きた"], romaji: ["kita"], meaning: ["north"] },
+      { kanji: "父", hiragana: ["ちち"], romaji: ["chichi"], meaning: ["father"] },
+      { kanji: "母", hiragana: ["はは"], romaji: ["haha"], meaning: ["mother"] },
+      { kanji: "六つ", hiragana: ["むっつ"], romaji: ["muttsu"], meaning: ["six",6] },
+      { kanji: "七つ", hiragana: ["ななつ"], romaji: ["nanatsu"], meaning: ["seven",7] },
+      { kanji: "八つ", hiragana: ["やっつ"], romaji: ["yattsu"], meaning: ["eight",7] },
+      { kanji: "水", hiragana: ["みず"], romaji: ["mizu"], meaning: ["water"] },
+      { kanji: "お父さん", hiragana: ["おとうさん"], romaji: ["otousan"], meaning: ["father"] },
+      { kanji: "お母さん", hiragana: ["おかあさん"], romaji: ["okaasan"], meaning: ["mother"] },
+      { kanji: "休み", hiragana: ["やすみ"], romaji: ["yasumi"], meaning: ["rest", "holiday"] },
+      { kanji: "広い", hiragana: ["ひろい"], romaji: ["hiroi"], meaning: ["spacious", "wide"] },
+      { kanji: "多い", hiragana: ["おおい"], romaji: ["ooi"], meaning: ["many"] },
+      { kanji: "少ない", hiragana: ["すくない"], romaji: ["sukunai"], meaning: ["few"] },
+      { kanji: "正しい", hiragana: ["ただしい"], romaji: ["tadashii"], meaning: ["correct"] },
+      { kanji: "右", hiragana: ["みぎ"], romaji: ["migi"], meaning: ["right"] },
+      { kanji: "左", hiragana: ["ひだり"], romaji: ["hidari"], meaning: ["left"] }
+      ],
   };

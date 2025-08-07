@@ -29,10 +29,12 @@ if (type == "kanji") {
         document.getElementById("hiragana").style.display = "none";
         document.getElementById("meaning").style.display = "none";
         document.getElementById("move-forward").style.display = "none";
+        document.getElementById("check").style.display = "inline-block";
     }
     function checkAnswer() {
         const userInput1 = document.getElementById("input1").value.trim().toLowerCase();
         const userInput2 = document.getElementById("input2").value.trim().toLowerCase();
+        document.getElementById("check").style.display = "none";
 
         const current = kanji[currentIndex];
 
@@ -108,11 +110,13 @@ if (type == "vocab") {
         document.getElementById("input2").value = "";
         document.getElementById("result").innerText = ""
         document.getElementById("meaning").style.display = "none"
+        document.getElementById("check").style.display = "inline-block";
     }
     function checkAnswer() {
         const userInput2 = document.getElementById("input2").value.trim().toLowerCase();
         const current = vocab[currentIndex];
         const isCorrect2 = current.meaning.includes(userInput2);
+        document.getElementById("check").style.display = "none";
 
         if (isCorrect2) {
             document.getElementById("result").innerText = "✅ Correct!";
