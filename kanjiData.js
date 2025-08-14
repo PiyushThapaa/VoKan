@@ -115,4 +115,20 @@ export const kanjiBlocks = {
       { kanji: "右", hiragana: ["みぎ"], romaji: ["migi"], meaning: ["right"] },
       { kanji: "左", hiragana: ["ひだり"], romaji: ["hidari"], meaning: ["left"] }
       ],
+      6: [
+        { kanji: "兄", hiragana: ["あに"], romaji: ["ani"], meaning: ["older brother"] },
+        { kanji: "女", hiragana: ["おんな"], romaji: ["onna"], meaning: ["woman"] },
+        { kanji: "先生", hiragana: ["せんせい"], romaji: ["sensei"], meaning: ["teacher"] },
+        { kanji: "会います", hiragana: ["あいます"], romaji: ["aimasu"], meaning: ["meet"] },
+        { kanji: "別れます", hiragana: ["わかれます"], romaji: ["wakaremasu"], meaning: ["part", "separate"] },
+        { kanji: "時", hiragana: ["とき"], romaji: ["toki"], meaning: ["time"] },
+        { kanji: "行きます", hiragana: ["いきます"], romaji: ["ikimasu"], meaning: ["go"] },
+        { kanji: "来ます", hiragana: ["きます"], romaji: ["kimasu"], meaning: ["come"] },
+        { kanji: "死にます", hiragana: ["しにます"], romaji: ["shinimasu"], meaning: ["die"] },
+        { kanji: "電気", hiragana: ["でんき"], romaji: ["denki"], meaning: ["electricity", "light"] },
+        { kanji: "お兄さん", hiragana: ["おにいさん"], romaji: ["oniisan"], meaning: ["older brother"] },
+        { kanji: "生まれます", hiragana: ["うまれます"], romaji: ["uma remasu"], meaning: ["be born", "born"] },
+        { kanji: "友だち", hiragana: ["ともだち"], romaji: ["tomodachi"], meaning: ["friend"] },
+        { kanji: "打つ", hiragana: ["うつ"], romaji: ["utsu"], meaning: ["hit"] }
+      ],
   };
