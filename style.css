@@ -144,3 +144,7 @@ body {
   #hiragana{
     margin-top: 10px;
   }
+
+  #kanji{
+    font-size: 30px;
+  }

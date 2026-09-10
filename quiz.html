@@ -9,16 +9,18 @@
 <body>
   <div id="quiz-container" class="quiz-container">
     <h1>VoKan Quiz</h1>
+    <div id="loading">Loading...</div>
     <div id="quiz-box" style="display: none;">
-      <p><strong>S.No:</strong> <span id="sno">1</span></p>
-      <p><strong id="type">Kanji/Vocab:</strong> <span id="kanji-vocab"></span></p>
+      <p><strong>Kanji No:</strong> <span id="sno"></span></p>
+      <p id="kanji"></p>
 
-      <input type="text" id="input1" placeholder="Enter Hiragana or Romaji" />
-      <input type="text" id="input2" placeholder="Enter Meaning in English" />
+      <input type="text" id="input" placeholder="Enter Hiragana or Romaji" />
+      <!-- <input type="text" id="input2" placeholder="Enter Meaning in English" /> -->
 
       <button id="check">Check</button>
-      <p id="hiragana"><b>Hiragana/Romaji : </b></p>
+      <p id="reading"><b>Reading : </b></p>
       <p id="meaning"><b>Meaning : </b></p>
+      <div id="kanjiContainer"></div>
       <p></p>
       <p id="result"></p>
       <button id="move-forward">Move Forward</button>

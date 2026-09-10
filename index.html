@@ -8,15 +8,17 @@
 </head>
 <body>
   <div class="container">
-    <h1 class="title">Practice with VoKan</h1>
-    <div class="button-group">
-      <div id="vocabBtn" onclick="navigateTo('vocab')" class="big-button">Vocab</div>
-      <div  id="kanjiBtn" onclick="navigateTo('kanji')" class="big-button">Kanji</div>
+    <h1 class="title" id="practice-header">VoKan - Select Kanji List</h1>
+    <div id="list" class="button-list">
+      <div id="loading">Loading...</div>
     </div>
+    <!-- <br> -->
+    <!-- <center><div class="start-btn">Start</div></center> -->
   </div>
+  <script type="module" src="index.js"></script>
   <script>
-    function navigateTo(type) {
-    window.location.href = `practice.html?type=${type}`;
+    function navigateToQuiz(chap) {
+    window.location.href = `quiz.html?chapter=${chap}`;
   }
   </script>
 </body>
