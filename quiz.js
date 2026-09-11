@@ -29,7 +29,7 @@ const chap = params.get("chapter");
 
         const current = kanji[currentIndex];
 
-        const isCorrect = current.romaji.includes(userInput) || current.hiragana.includes(userInput)
+        const isCorrect = current.romaji == userInput || current.hiragana == userInput
 
         if (isCorrect) {
             document.getElementById("result").innerText = "✅ Correct!";
