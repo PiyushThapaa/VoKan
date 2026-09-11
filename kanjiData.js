@@ -73,7 +73,6 @@ export const kanjiBlocks = {
     { kanji: "遊", meaning: "play, amuse oneself" },
     { kanji: "場", meaning: "place, area" }
   ] },
-  { kanji: "かご", reading: "かご", romaji: "kago", meaning: "basket" },
   { kanji: "食料品", reading: "しょくりょうひん", romaji: "shokuryouhin", meaning: "foodstuffs, groceries", kanjiArray: [
     { kanji: "食", meaning: "eat, food" },
     { kanji: "料", meaning: "material, fee" },
